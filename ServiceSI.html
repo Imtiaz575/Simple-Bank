@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank - Services</title>
+    <link rel="stylesheet" href="ServiceSI.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Simple Bank</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="HomeSI.html">Home</a></li>
+                <li><a href="ServiceSI.html" class="active">Services</a></li>
+                <li><a href="AboutSI.html">About</a></li>
+                <li><a href="ContactSI.html">Contact</a></li>
+                <li><a href="bank.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">💰</div>
+                <h3>Deposit Accounts</h3>
+                <p>Secure savings and checking accounts with competitive interest rates and flexible access.</p>
+                <button onclick="showDetails('deposit')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">🏦</div>
+                <h3>Loans</h3>
+                <p>Personal, home, and auto loans with low rates and customizable repayment plans.</p>
+                <button onclick="showDetails('loans')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">💳</div>
+                <h3>Credit & Debit Cards</h3>
+                <p>Reward-rich credit cards and convenient debit cards for all your transactions.</p>
+                <button onclick="showDetails('cards')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">🌐</div>
+                <h3>Digital Banking</h3>
+                <p>Manage your finances on-the-go with our secure mobile and online banking platforms.</p>
+                <button onclick="showDetails('digital')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">📈</div>
+                <h3>Investment Services</h3>
+                <p>Grow your wealth with our tailored investment plans and expert advice.</p>
+                <button onclick="showDetails('investment')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">🔄</div>
+                <h3>Remittances & Fund Transfers</h3>
+                <p>Fast and secure domestic and international money transfers.</p>
+                <button onclick="showDetails('remittances')">Learn More</button>
+            </div>
+            <div class="service-card">
+                <div class="icon">🔒</div>
+                <h3>Safekeeping</h3>
+                <p>Protect your valuables with our secure safe deposit boxes and custody services.</p>
+                <button onclick="showDetails('safekeeping')">Learn More</button>
+            </div>
+        </div>
+        <div id="service-details" class="service-details">
+            <h3 id="details-title"></h3>
+            <p id="details-content"></p>
+            <button onclick="closeDetails()" class="btn-close">Close</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Simple Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="ServiceSI.js"></script>
+</body>
+</html>

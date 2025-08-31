@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank - About Us</title>
+    <link rel="stylesheet" href="AboutSI.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Simple Bank</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="HomeSI.html">Home</a></li>
+                <li><a href="ServiceSI.html">Services</a></li>
+                <li><a href="AboutSI.html" class="active">About</a></li>
+                <li><a href="ContactSI.html">Contact</a></li>
+                <li><a href="bank.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-container">
+            <h2>About Simple Bank</h2>
+            <p>Simple Bank is a modern financial institution dedicated to providing secure, innovative, and customer-focused banking solutions. Established in 2020, our mission is to simplify banking for everyone, offering seamless digital experiences and personalized services.</p>
+            <p>Our core values include integrity, innovation, and customer satisfaction. Whether you're saving for the future, seeking a loan, or managing investments, we're here to support your financial journey with transparency and trust.</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div id="team-members" class="team-grid"></div>
+        <div class="team-form-container">
+            <h3>Add Team Member (Demo)</h3>
+            <form id="team-form">
+                <div class="form-group">
+                    <label for="team-name">Name</label>
+                    <input type="text" id="team-name" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="team-role">Role</label>
+                    <input type="text" id="team-role" placeholder="Enter Role" required>
+                </div>
+                <div class="form-group">
+                    <label for="team-bio">Bio</label>
+                    <textarea id="team-bio" placeholder="Enter Short Bio" required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" onclick="addTeamMember()" class="btn-primary">Add Member</button>
+                </div>
+                <p id="team-form-message" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Simple Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="AboutSI.js"></script>
+</body>
+</html>

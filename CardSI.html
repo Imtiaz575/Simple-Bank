@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank - Credit Cards</title>
+    <link rel="stylesheet" href="CardSI.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Simple Bank</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="HomeSI.html">Home</a></li>
+                <li><a href="ServiceSI.html">Services</a></li>
+                <li><a href="AboutSI.html">About</a></li>
+                <li><a href="ContactSI.html">Contact</a></li>
+                <li><a href="bank.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="credit-cards">
+        <div class="cards-container">
+            <h2>Credit Cards</h2>
+            <p>Explore our flexible credit card options with great rewards, tailored to your lifestyle. Enjoy cashback, travel benefits, and more.</p>
+        </div>
+        <div id="card-types" class="card-grid"></div>
+        <div class="inquiry-form-container">
+            <h3>Inquire About a Credit Card</h3>
+            <form id="card-inquiry-form">
+                <div class="form-group">
+                    <label for="inquiry-name">Name</label>
+                    <input type="text" id="inquiry-name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-email">Email</label>
+                    <input type="email" id="inquiry-email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-type">Select Card Type</label>
+                    <select id="card-type" required>
+                        <option value="">Select a card</option>
+                        <option value="Rewards Card">Rewards Card</option>
+                        <option value="Travel Card">Travel Card</option>
+                        <option value="Cashback Card">Cashback Card</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inquiry-message">Message</label>
+                    <textarea id="inquiry-message" placeholder="Enter Your Inquiry" required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" onclick="submitCardInquiry()" class="btn-primary">Submit Inquiry</button>
+                </div>
+                <p id="inquiry-form-message" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Simple Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="CardSI.js"></script>
+</body>
+</html>

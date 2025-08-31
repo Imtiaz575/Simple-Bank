@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Application</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Simple Bank</h1>
+        
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p id="login-error" class="error"></p>
+        </div>
+        <button><a href="HomeSI.html">Home</a></button>
+        
+        <!-- Dashboard Section (hidden initially) -->
+        <div id="dashboard" style="display: none;">
+            <h2>Dashboard</h2>
+            <p id="welcome-message"></p>
+            <p>Current Balance: $<span id="balance">0.00</span></p>
+            
+            <h3>Transactions</h3>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <p id="transaction-error" class="error"></p>
+            
+            <h3>Transaction History</h3>
+            <ul id="history"></ul>
+            
+            <button onclick="logout()">Logout</button>
+            
+        </div>
+    </div>
+    
+    <script src="bank.js"></script>
+</body>
+</html>

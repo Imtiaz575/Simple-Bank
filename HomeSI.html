@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank - Home</title>
+    <link rel="stylesheet" href="HomeSI.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Simple Bank</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="HomeSI.html">Home</a></li>
+                <li><a href="ServiceSI.html">Services</a></li>
+                <li><a href="AboutSI.html">About</a></li>
+                <li><a href="ContactSI.html">Contact</a></li>
+                <li><a href="bank.html" class="btn-login">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Simple Bank</h1>
+            <p>Your trusted partner for secure and easy banking.</p>
+            <a href="RegistrationSI.html" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">💰</div>
+              <a href="SavingSI.html">  <h3>Savings Accounts</h3></a>
+                <p>Secure savings with competitive interest rates.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">🏦</div>
+                <a href="OnlineSI.html"><h3>Online Banking</h3></a>
+                <p>Manage your finances anytime, anywhere.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">💳</div>
+                <a href="CardSI.html"><h3>Credit Cards</h3></a>
+                <p>Flexible credit options with great rewards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a modern banking institution dedicated to providing seamless financial services with a focus on security, innovation, and customer satisfaction.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="submitForm()" class="btn-primary">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Simple Bank. All rights reserved.</p>
+    </footer>
+
+    <script src="HomeSI.js"></script>
+</body>
+</html>
